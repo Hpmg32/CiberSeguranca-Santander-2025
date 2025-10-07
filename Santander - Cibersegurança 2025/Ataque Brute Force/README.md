@@ -1,25 +1,35 @@
-# 🛡️ Laboratório de Cibersegurança - Santander 2025
-
 <div align="center">
+<img src="assets/logo-soa.svg" alt="Santander Logo" width="180"/>
 
-![Security](https://img.shields.io/badge/Security-Penetration%20Testing-red?style=for-the-badge&logo=security&logoColor=white)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-Virtualization-blue?style=for-the-badge&logo=virtualbox&logoColor=white)
-![Kali Linux](https://img.shields.io/badge/Kali%20Linux-Offensive%20Security-purple?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-green?style=for-the-badge)
+# Santander Cibersegurança 2025 - DIO
+
+# 🎯 DESAFIO: ATAQUE BRUTE FORCE
+
+
+![Brute Force](https://img.shields.io/badge/Brute%20Force-Challenge%20Complete-DC143C?style=for-the-badge&logo=target&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-Penetration%20Testing-557C93?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Medusa](https://img.shields.io/badge/Medusa-Attack%20Tool-8B0000?style=for-the-badge&logo=security&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-28A745?style=for-the-badge&logo=check-circle&logoColor=white)
 
 </div>
 
-## 📋 Sobre o Projeto
+## � Descrição do Desafio
 
-Este repositório documenta um **laboratório completo de cibersegurança** desenvolvido para a formação do curso de CiberSegurança do Santander em parceria com a DIO. O projeto demonstra técnicas fundamentais de **penetration testing** em ambiente controlado, abrangendo desde a configuração do ambiente até a execução de ataques éticos.
+Este projeto documenta a implementação prática de **ataques de força bruta** utilizando **Kali Linux** e a ferramenta **Medusa**, em conjunto com ambientes vulneráveis (**Metasploitable 2** e **DVWA**), para simular cenários de ataque e exercitar medidas de prevenção em ambiente controlado.
 
-### 🎯 Objetivos Educacionais
+### 📋 Escopo do Projeto
 
-- Configurar ambiente isolado para testes de segurança
-- Demonstrar técnicas de reconhecimento de rede
-- Executar ataques de força bruta controlados
-- Desenvolver habilidades práticas em cibersegurança
-- Promover práticas éticas em segurança da informação
+✅ **Configuração de ambiente**: Duas VMs (Kali Linux e Metasploitable 2) no VirtualBox com rede host-only
+✅ **Ataques simulados**: Força bruta em FTP, automação em formulários web (DVWA) e password spraying em SMB
+✅ **Documentação completa**: Wordlists, comandos, validações e recomendações de mitigação
+
+### 🎯 Objetivos de Aprendizagem Alcançados
+
+- ✅ Compreender **ataques de força bruta** em diferentes serviços (FTP, Web, SMB)
+- ✅ Utilizar **Kali Linux e Medusa** para auditoria de segurança em ambiente controlado
+- ✅ **Documentar processos técnicos** de forma clara e estruturada
+- ✅ **Reconhecer vulnerabilidades** comuns e propor medidas de mitigação
+- ✅ Utilizar o **GitHub como portfólio técnico** para compartilhar documentação
 
 ---
 
@@ -52,17 +62,25 @@ graph TB
 
 ---
 
-## 📚 Documentação Completa
+## � Estrutura do Desafio Executado
 
-### 🚀 Guia de Implementação
+### 🎯 Cenários de Ataque Implementados
 
-| Etapa   | Documento                                              | Descrição                                                                 | Status      |
-| ------- | ------------------------------------------------------ | ------------------------------------------------------------------------- | ----------- |
-| **1**   | [🛡️ Configuração do Ambiente](1.ambiente.md)           | Setup completo do laboratório com VirtualBox, Kali Linux e Metasploitable | ✅ Completo |
-| **2**   | [🔍 Varredura de Rede](2.varreduraRede.md)             | Reconhecimento ativo e identificação de serviços vulneráveis              | ✅ Completo |
-| **3**   | [⚔️ Ataque à Rede](3.ataqueRede.md)                    | Implementação de ataques de força bruta contra serviços FTP               | ✅ Completo |
-| **3.2** | [🌐 Ataque a Formulários Web](3.2.formularioDVWA.md)   | Ataques de força bruta contra formulários de login em aplicações web      | ✅ Completo |
-| **3.3** | [🔐 Password Spraying SMB](3.3.passwordSprayingSMB.md) | Ataque em cadeia com enumeração SMB e password spraying automatizado      | ✅ Completo |
+| 🎯 **Cenário**            | 📄 **Documentação**                                     | 🔧 **Técnica**             | ⚔️ **Ferramenta**   | ✅ **Status** |
+| :------------------------ | :------------------------------------------------------ | :------------------------- | :------------------ | :-----------: |
+| **1. Setup Laboratório**  | [🛡️ Configuração do Ambiente](documents/1.ambiente.md)  | Virtualização e Isolamento | VirtualBox + VMs    |      ✅       |
+| **2. Reconhecimento**     | [🔍 Varredura de Rede](documents/2.varreduraRede.md)    | Network Scanning           | Nmap + Enum         |      ✅       |
+| **3. Brute Force FTP**    | [⚔️ Ataque FTP](documents/3.1.BruteForceFTP.md)         | Credential Attack          | Medusa              |      ✅       |
+| **4. Web Form Attack**    | [🌐 Formulário DVWA](documents/3.2.formularioDVWA.md)   | HTTP POST Attack           | Medusa + DevTools   |      ✅       |
+| **5. SMB Password Spray** | [🔐 SMB Spraying](documents/3.3.passwordSprayingSMB.md) | Enumeration + Spraying     | enum4linux + Medusa |      ✅       |
+
+### 🏆 Principais Conquistas do Desafio
+
+- 🥇 **Ambiente 100% funcional** com VMs isoladas em rede host-only
+- 🎯 **3 protocolos comprometidos** (FTP, HTTP, SMB) com ataques de força bruta
+- 📝 **Documentação técnica detalhada** de todos os processos
+- 🛡️ **Contramedidas defensivas** documentadas para cada vulnerabilidade
+- 📊 **Wordlists customizadas** e metodologias replicáveis
 
 ---
 
@@ -117,71 +135,15 @@ wget https://sourceforge.net/projects/metasploitable/files/Metasploitable2/
 
 ### 🎯 Sequência de Execução
 
-1. **[Configurar Ambiente](1.ambiente.md)** - Preparar laboratório isolado
-2. **[Realizar Varredura](2.varreduraRede.md)** - Identificar serviços ativos
-   3.1 **[Ataques Brute Force](3.1.BruteForceFTP.md.md)** - Testar vulnerabilidades encontradas
-   3.2 **[Ataque Formulário WEB](3.2.formularioDVWA.md)** - Testar vulnerabilidades de formulários WEB
-   3.3 **[Ataque SMB](3.3.passwordSprayingSMB.md)** - Testar vulnerabilidades e Spraying em SMB
+1. **[Configurar Ambiente](/Santander%20-%20Cibersegurança%202025/Ataque%20Brute%20Force/documents/1.ambiente.md)** - Preparar laboratório isolado
+2. **[Realizar Varredura](/Santander%20-%20Cibersegurança%202025/Ataque%20Brute%20Force/documents/2.varreduraRede.md)** - Identificar serviços ativos
+3. **[Ataques Brute Force](/Santander%20-%20Cibersegurança%202025/Ataque%20Brute%20Force/documents/3.1.BruteForceFTP.md.md)** - Testar vulnerabilidades encontradas
+4. **[Ataque Formulário WEB](/Santander%20-%20Cibersegurança%202025/Ataque%20Brute%20Force/documents/3.2.formularioDVWA.md)** - Testar vulnerabilidades de formulários WEB
+5. **[Ataque SMB](/Santander%20-%20Cibersegurança%202025/Ataque%20Brute%20Force/documents/3.3.passwordSprayingSMB.md)** - Testar vulnerabilidades e Spraying em SMB
 
 ---
 
-## 🔍 Resumo das Etapas
-
-### 🏗️ [Etapa 1: Configuração do Ambiente](1.ambiente.md)
-
-**Objetivo**: Criar laboratório isolado e seguro
-
-- ✅ Instalação do VirtualBox
-- ✅ Configuração do Kali Linux
-- ✅ Setup do Metasploitable 2
-- ✅ Configuração de rede Host-Only
-- ✅ Testes de conectividade
-
-### 🔍 [Etapa 2: Varredura de Rede](2.varreduraRede.md)
-
-**Objetivo**: Reconhecimento ativo do alvo
-
-- ✅ Identificação de endereços IP
-- ✅ Teste de conectividade (ping)
-- ✅ Varredura de portas (nmap)
-- ✅ Identificação de serviços vulneráveis
-- ✅ Teste inicial de acesso FTP
-
-### ⚔️ [Etapa 3: Ataque à Rede](3.ataqueRede.md)
-
-**Objetivo**: Exploração de vulnerabilidades
-
-- ✅ Criação de wordlists customizadas
-- ✅ Configuração da ferramenta Medusa
-- ✅ Execução de ataque de força bruta
-- ✅ Validação de credenciais obtidas
-- ✅ Análise de resultados e contramedidas
-
-### 🌐 [Etapa 3.2: Ataque a Formulários Web](3.2.formularioDVWA.md)
-
-**Objetivo**: Exploração de aplicações web vulneráveis
-
-- ✅ Análise de formulários de login web
-- ✅ Inspeção de requisições HTTP com Developer Tools
-- ✅ Criação de wordlists estratégicas
-- ✅ Automação de ataques com Medusa HTTP
-- ✅ Validação de acesso ao DVWA
-- ✅ Implementação de contramedidas defensivas
-
-### 🔐 [Etapa 3.3: Password Spraying SMB](3.3.passwordSprayingSMB.md)
-
-**Objetivo**: Ataque em cadeia com enumeração e password spraying
-
-- ✅ Enumeração completa SMB com enum4linux
-- ✅ Análise estratégica de usuários descobertos
-- ✅ Criação de wordlists direcionadas para spraying
-- ✅ Execução de password spraying automatizado
-- ✅ Validação e exploração de shares SMB
-- ✅ Implementação de técnicas stealth e contramedidas
-
----
-
-## 📊 Resultados Esperados
+## � Resultados Obtidos no Desafio
 
 ### 🎯 Cenários de Sucesso
 
@@ -217,12 +179,12 @@ Shares disponíveis: tmp, opt, print$, ADMIN$
 Acesso: ✅ Compartilhamentos de rede
 ```
 
-### �📈 Métricas de Aprendizado
+### 📈 Métricas de Aprendizado
 
 #### ⏱️ Tempo por Etapa
 
-- **Tempo de setup**: 2-4 horas
-- **Tempo de varredura**: 10-30 minutos
+- **Tempo de setup**: 1-2 horas
+- **Tempo de varredura**: 5-10 minutos
 - **Tempo de ataque FTP**: 1-5 minutos
 - **Tempo de ataque Web**: 1-3 minutos
 - **Tempo de enumeração + spraying SMB**: 3-8 minutos
@@ -266,152 +228,80 @@ Acesso: ✅ Compartilhamentos de rede
 
 ---
 
-## 🎓 Aspectos Educacionais
+## 📚 Recursos Utilizados
 
-### 📚 Conceitos Abordados
+### 📖 Documentações Oficiais Consultadas
 
-#### 🏗️ Infraestrutura e Ambiente
+- 🐧 **[Kali Linux](https://www.kali.org/docs/)** - Site oficial e documentação
+- 🌐 **[DVWA](http://www.dvwa.co.uk/)** - Damn Vulnerable Web Application
+- ⚔️ **[Medusa](http://foofus.net/goons/jmk/medusa/medusa.html)** - Documentação da ferramenta
+- 🔍 **[Nmap](https://nmap.org/book/)** - Manual oficial
 
-- **Virtualização** e isolamento de ambientes
-- **Configuração de redes** Host-Only
-- **Segmentação** e contenção de ataques
+### 🛠️ Materiais Criados
 
-#### 🔍 Reconhecimento e Enumeração
-
-- **Reconhecimento ativo** de redes
-- **Varredura de portas** e identificação de serviços
-- **Enumeração SMB/CIFS** com enum4linux
-- **Descoberta de usuários** em sistemas Windows/Linux
-
-#### ⚔️ Técnicas de Ataque
-
-- **Ataques de força bruta** automatizados
-- **Password spraying** vs brute force tradicional
-- **Ataques a formulários web** (HTTP POST)
-- **Exploração de protocolos** (FTP, SMB, HTTP)
-- **Análise de requisições HTTP** com Developer Tools
-
-#### 🛡️ Segurança Defensiva
-
-- **Análise de vulnerabilidades** e classificação OWASP
-- **Contramedidas defensivas** por protocolo
-- **Monitoramento e detecção** de ataques
-- **Implementação de controles** de segurança
-
-### 🔍 Técnicas Demonstradas
-
-#### 🌐 Network e Protocol Analysis
-
-- **Network scanning** com Nmap
-- **SMB enumeration** com enum4linux e smbclient
-- **HTTP analysis** com Developer Tools (F12)
-- **Protocol exploitation** em múltiplas camadas
-
-#### 🔐 Authentication Attacks
-
-- **Brute force attacks** com Medusa (FTP, HTTP, SMB)
-- **Password spraying** para evitar bloqueios
-- **Credential validation** e teste de acesso
-- **Wordlist creation** e customização estratégica
-
-#### 📊 Analysis e Intelligence
-
-- **Log analysis** e incident response
-- **Results interpretation** de ferramentas de pentest
-- **Vulnerability assessment** e classificação de riscos
-- **Attack chain planning** e execução sequencial
-
-#### 🛠️ Tool Mastery
-
-- **Command-line proficiency** em ambiente Linux
-- **Automation scripting** para ataques em massa
-- **Multi-protocol testing** com diferentes ferramentas
-- **Stealth techniques** para evitar detecção
-
-### 🏆 Competências Desenvolvidas
-
-#### 🔧 Competências Técnicas
-
-- **Configuração de laboratórios** de segurança
-- **Uso profissional** de ferramentas de pentesting
-- **Análise de resultados** de varredura e ataques
-- **Interpretação de logs** de segurança
-- **Documentação técnica** profissional
-
-#### 🧠 Competências Analíticas
-
-- **Pensamento estratégico** em cibersegurança
-- **Análise de riscos** e priorização de vulnerabilidades
-- **Correlação de informações** entre diferentes fontes
-- **Assessment methodology** estruturada
-
-#### 🎯 Competências Específicas por Protocolo
-
-- **FTP Security**: Configuração segura e testes de penetração
-- **Web Application Security**: Análise de formulários e OWASP Top 10
-- **SMB/CIFS Security**: Enumeração, spraying e hardening
-- **Network Security**: Segmentação, monitoramento e resposta
-
-#### 🛡️ Competências Defensivas
-
-- **Incident response** e análise forense
-- **Security monitoring** e detecção de anomalias
-- **Hardening** de sistemas e serviços
-- **Security awareness** e treinamento
-
-#### 📈 Competências Profissionais
-
-- **Ethical hacking** e responsible disclosure
-- **Risk communication** para stakeholders
-- **Compliance** com frameworks de segurança
-- **Continuous learning** em cibersegurança
-
-### 🎓 Frameworks de Conhecimento Aplicados
-
-#### 📋 Metodologias de Pentesting
-
-- **OWASP Testing Guide** para aplicações web
-- **NIST Cybersecurity Framework** para gestão de riscos
-- **MITRE ATT&CK** para táticas e técnicas de atacantes
-- **PTES** (Penetration Testing Execution Standard)
-
-#### 🏅 Preparação para Certificações
-
-- **CEH** (Certified Ethical Hacker) - Técnicas fundamentais
-- **OSCP** (Offensive Security Certified Professional) - Hands-on skills
-- **GCIH** (GIAC Certified Incident Handler) - Resposta a incidentes
-- **CISSP** (Certified Information Systems Security Professional) - Gestão
+- 📄 **README.md detalhado** com toda a documentação
+- 📝 **Wordlists customizadas** para cada tipo de ataque
+- 🖼️ **Capturas de tela** organizadas (pasta `/images`)
+- 📋 **Scripts e configurações** utilizados no laboratório
 
 ---
 
-## 📄 Licença
+## 💭 Reflexões e Aprendizados
 
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+### 🎯 Principais Desafios Enfrentados
+
+1. **Configuração de Rede**: Ajustar corretamente a rede host-only para isolamento total
+2. **Wordlist Strategy**: Criar listas eficientes sem ser excessivamente demorado
+3. **Stealth Techniques**: Implementar password spraying para evitar bloqueios
+4. **Documentation Balance**: Documentar detalhadamente sem expor informações sensíveis
+
+### 🚀 Competências Desenvolvidas
+
+- **Pensamento Estratégico**: Planejamento de ataques multi-protocolo
+- **Automação**: Uso eficiente de ferramentas como Medusa
+- **Análise Defensiva**: Identificação de contramedidas para cada vulnerabilidade
+- **Documentação Técnica**: Criação de guias reproduzíveis e didáticos
+
+### 🛡️ Consciência Ética
+
+Este projeto reforçou a importância de:
+
+- **Ambiente controlado**: Nunca executar testes em sistemas não autorizados
+- **Responsible disclosure**: Documentar vulnerabilidades para fins educacionais
+- **Continuous learning**: Manter-se atualizado com as melhores práticas de segurança
 
 ---
 
-### 🙏 Agradecimentos
+## 🔗 Links do Projeto
 
-- **Programa Santander 2025** - Pela oportunidade de desenvolvimento
-- **DIO** - Pelo desenvolvimento do curso e ensinamentos
-- **Comunidade Kali Linux** - Pelas ferramentas e documentação
-- **Rapid7** - Pelo Metasploitable como ambiente de treinamento
-- **Comunidade de Cibersegurança** - Pelo conhecimento compartilhado
+### 🎯 Quick Navigation
 
----
+- **[⚡ Início Rápido](documents/1.ambiente.md)** - Configure seu laboratório
+- **[🔍 Reconhecimento](documents/2.varreduraRede.md)** - Identifique alvos
+- **[⚔️ Ataques FTP](documents/3.1.BruteForceFTP.md)** - Primeiro ataque
+- **[🌐 Web Forms](documents/3.2.formularioDVWA.md)** - Aplicações web
+- **[🔐 SMB Spraying](documents/3.3.passwordSprayingSMB.md)** - Técnicas avançadas
+
 
 <div align="center">
 
-### 🎯 **Laboratório Pronto para Uso!**
+### 🏆 **DESAFIO CONCLUÍDO COM SUCESSO!**
 
-**[🚀 Começar Agora](1.ambiente.md)** | **[📚 Documentação](2.varreduraRede.md)** | **[⚔️ Ataques](3.ataqueRede.md)** | **[🌐 Web Attacks](3.2.formularioDVWA.md)** | **[🔐 SMB Attacks](3.3.passwordSprayingSMB.md)**
+**[� Documentação Completa](documents/)** | **[🎯 Resultados Obtidos](#-resultados-obtidos-no-desafio)** | **[💭 Aprendizados](#-reflexões-e-aprendizados)**
 
 ---
 
-**Desenvolvido com ❤️ para educação em cibersegurança**
+### 🌟 **Projeto desenvolvido como parte do Santander Cibersegurança 2025**
 
-![Footer](https://img.shields.io/badge/Made%20with-Markdown-blue?style=for-the-badge&logo=markdown)
-![Educational](https://img.shields.io/badge/Purpose-Educational-green?style=for-the-badge&logo=academic)
-![Safe](https://img.shields.io/badge/Environment-Controlled-orange?style=for-the-badge&logo=shield)
+**Desenvolvido com dedicação para demonstrar competências em ethical hacking e documentação técnica**
+
+![Challenge](https://img.shields.io/badge/Challenge-Completed-28A745?style=for-the-badge&logo=trophy&logoColor=white)
+![GitHub](https://img.shields.io/badge/Portfolio-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Educational](https://img.shields.io/badge/Purpose-Educational-4285F4?style=for-the-badge&logo=academic&logoColor=white)
+![Ethical](https://img.shields.io/badge/Ethical-Hacking-FF6B6B?style=for-the-badge&logo=shield-check&logoColor=white)
+
+---
+
+_Se este projeto foi útil para seus estudos, considere dar uma ⭐ no repositório!_
 
 </div>
