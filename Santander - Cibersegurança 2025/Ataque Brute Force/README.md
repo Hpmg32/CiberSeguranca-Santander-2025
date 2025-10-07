@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/logo-soa.svg" alt="Santander Logo" width="180"/>
+<img src="./../assets/logo-soa.svg" alt="Santander Logo" width="180"/>
 
 # Santander Cibersegurança 2025 - DIO
 
