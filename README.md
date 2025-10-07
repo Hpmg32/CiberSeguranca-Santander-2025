@@ -3,11 +3,7 @@ Este repositório reúne materiais, projetos e soluções desenvolvidos para o p
 
 ---
 
-Preparando o ambiente controlado:
-Instalando o kali
-Instalando o Metasploitable 2
-Configurando a rede de ambos para utilizar apenas a rede interna (host-only)
-
+📘 [Preparando o ambiente controlado](1.ambiente.md)
 
 --- 
 1° - Rastreamento de IP: ifconfig [máquina alvo]
